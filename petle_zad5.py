@@ -1,15 +1,14 @@
-studenci = int(input("Jaka jest liczba studentów w grupie laboratoryjnej?: "))
+n = int(input("Podaj liczbę studentów: "))
 
-zliczanie = 0
+i = 1
+suma = 0
 
-i = 0
-
-while i < studenci:
-    punkty = float(input("Ile punktów otrzymał student?: "))
-    zliczanie = zliczanie + punkty
+while i < n+1:
+    punkty = float(input(f"Podaj liczbę punktów studenta {i}: "))
+    suma = suma + punkty
     i = i + 1
 
-srednia = zliczanie / studenci
-print("Średnia z punktów które zdobyli studenci wynosi: ", srednia)
+srednia = suma / n
+print("Srednia wynosi: ", srednia)
     
 

@@ -112,12 +112,30 @@ print(punkty)
 print()
 print("Największa liczba punktów w liście to:", max(punkty))
 print("Najmniejsza liczba punktów w liście to:", min(punkty))
+print()
+a = float(input("Podaj wybraną liczbę z listy: "))
+if a in punkty:
+    print(punkty.index(a))
+else:
+    print("Liczba nie występuje na liście")
 print("Średnia z tych punktów wynosi:",sr)
 print("Więcej pktów od średniej zdobyło:",more,"osób")
 print("Mniej pktów od średniej zdobyło:",less,"osób")
 
+lista_x = []
 
+print()
+print("Lista 10 elementowa:")
+for i in range (0,10):
+    n = input("Podaj dowolna nazwe: ")
+    lista_x.append(n)
+print()
+print(lista_x)
+print(lista_x[9:6:-1] + lista_x[:7])
 
+lista_y = lista_x
 
+lista_y[5] = "LOL"
 
-
+print(lista_x)
+print(lista_y)
